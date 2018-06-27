@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ver.6.1.0 later. -->
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+<!-- ver.6.0.0 earlier. -->
+<!-- <mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!--     xsi:schemaLocation="http://dozer.sourceforge.net -->
+<!--           http://dozer.sourceforge.net/schema/beanmapping.xsd"> -->
+
+    <mapping type="one-way">
+        <class-a>com.example.oneway.Source</class-a>
+        <class-b>com.example.oneway.Destination</class-b>
+        <field-exclude type="one-way">
+            <a>name</a>
+            <b>name</b>
+        </field-exclude>
+        <field type="one-way">
+            <a>id</a>
+            <b>userId</b>
+        </field>
+    </mapping>
+
+</mappings>
